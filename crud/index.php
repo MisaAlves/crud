@@ -88,8 +88,12 @@ $result = $conn->query($sql);
                     <td><?php echo htmlspecialchars($row['idade']); ?></td>
                     <td><?php echo htmlspecialchars($row['genero']); ?></td>
                     <td>
-                        <button class="edit" onclick="editUser(<?php echo $row['id']; ?>, '<?php echo htmlspecialchars($row['nome']); ?>', <?php echo $row['idade']; ?>, '<?php echo $row['genero']; ?>')">Editar</button>
-                        <a href="?delete=<?php echo $row['id']; ?>" onclick="return confirm('Tem certeza que deseja excluir?')"class="excluir">Excluir</a>
+                        <button class="edit" onclick="editUser(<?php echo $row['id']; ?>, '<?php echo htmlspecialchars($row['nome']); ?>', <?php echo $row['idade']; ?>, '<?php echo $row['genero']; ?>')">
+                        <img class="editar" src="imagem/editar.png" alt="editar">
+                    </button>
+                        <a href="?delete=<?php echo $row['id']; ?>" onclick="return confirm('Tem certeza que deseja excluir?')"class="excluir">
+                    <img class="exc" src="imagem/excluir.png" alt="excluir">
+                    </a>
                     </td>
                 </tr>
             <?php endwhile; ?>

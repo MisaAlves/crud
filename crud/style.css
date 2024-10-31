@@ -77,8 +77,9 @@ form {
 
 .table-wrapper {
     padding: 0 5rem;
-    
+    border-radius: 5px;
 }
+
 
 .btn-search {
   /* padding: 0.4rem 0.6rem; */
@@ -99,19 +100,31 @@ form {
     color: white;
 }
 
-.btn-add > span {
-
-}
-
 .edit{
+    background-color: yellow;
+    padding: 10px;
     border-radius: 8px;
-    background-color: rgb(210, 231, 15);
-    font-size: 15px;
+    
+    
+ }
+
+
+.editar{
+    width: 15px;
+    
 }
+
 
 .excluir{
-    border-radius: 5px;
-    background-color: #F23030;
-    color: white;
-    text-decoration: none;
+    background-color: red;
+    padding: 10px;
+    border-radius: 8px;
+    height: 20px;
+    align-items: center;
 }
+
+.exc{
+    width: 20px;
+    margin-bottom: -3px;
+}
+
