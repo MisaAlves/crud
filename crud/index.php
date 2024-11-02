@@ -46,10 +46,10 @@ $result = $conn->query($sql);
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cadastro de Usuários</h1>
+    <h1>Faça aqui o seu cadastro</h1>
 
     <div class="form-wrapper">
-        <form method="POST" id="userForm">
+        <form class="formulario" method="POST" id="userForm">
             <input type="hidden" name="id" id="userId">
             <input type="text" name="nome" placeholder="Nome" required>
             <input type="number" name="idade" placeholder="Idade" required>
@@ -67,7 +67,9 @@ $result = $conn->query($sql);
 
         <form method="GET">
             <input type="text" name="search" placeholder="Pesquisar por nome" value="<?php echo htmlspecialchars($searchTerm); ?>">
-            <button class="btn-search" type="submit">Pesquisar <span class="material-symbols-outlined">
+            <button class="btn-search" type="submit">
+                <img class="pesquisar" src="imagem/pesquisar.png" alt="pesquisar">    
+            <span class="material-symbols-outlined">
                     
                 </span>
             </button>
